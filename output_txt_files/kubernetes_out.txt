@@ -1,1 +1,19 @@
-<paste log output from Kubernetes-mediated prediction, here>
+std-logic@dev-02:~/ml-microservice-kubernetes$ ./run_kubernetes.sh
+pod/hazelcast created
+NAME        READY   STATUS              RESTARTS   AGE
+hazelcast   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+std-logic@dev-02:~/ml-microservice-kubernetes$ ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "hazelcast" already exists
+NAME        READY   STATUS    RESTARTS   AGE
+hazelcast   1/1     Running   0          6s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
